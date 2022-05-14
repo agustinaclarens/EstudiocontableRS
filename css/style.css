@@ -71,6 +71,11 @@ body {
     margin-top: 20px;
 }
 
+.iconos__card:hover {
+    color: palevioletred;
+}
+
+
 /*.iconos {
     text-align: center;
     margin: 10px;
@@ -112,6 +117,8 @@ body {
 .acceso__boton {
     margin-left: 25px;
 }
+
+
 
 .encabezado__titulo {
     background-image: url(../recursos/foto-titulo.jpeg);
@@ -182,21 +189,26 @@ body {
     display: flex;
 }
 
-.quienessomos__foto, .quienessomos__infogra{
+.quienessomos__foto,
+.quienessomos__infogra {
     flex-basis: 50%;
-    
+
 }
 
-.quienessomos__foto img{
+.quienessomos__foto img {
     max-width: 100%;
 
+}
+
+.quienessomos__foto img:hover {
+    transform: scale(1.05);
 }
 
 /*.video{
     max-width: 100%;
 }*/
 
-.video{
+.video {
     text-align: center;
 }
 
@@ -218,18 +230,32 @@ body {
 }
 
 .acceso__siguiente {
-    border-color: rgb(0, 170, 255);
-    border-width: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 6px;
+    padding: 3px 6px;
+    border-width: 1px solid transparent;
+    border-radius: 3px;
+    border-color: white;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.acceso__siguiente:hover {
+    color: white;
+    background-color: palevioletred;
 }
 
 .formulario__boton {
-    margin: 3px;
-    padding: 3px;
-    border-color: rgb(0, 170, 255);
-    border-width: 4px;
+    margin: 6px;
+    padding: 3px 6px;
+    border-width: 1px solid transparent;
+    border-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formulario__boton:hover {
+    background-color: palevioletred;
+    color: white;
 }
 
 /* MQ tablet*/
@@ -242,7 +268,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    
+
 }
 
 /* MQ tcelular*/
@@ -255,17 +281,15 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .quienessomos__contenido{
+    .quienessomos__contenido {
         flex-direction: column;
     }
 
-    .formulario__form{
+    .formulario__form {
         flex-direction: column;
     }
 
-    .acceso__form{
-       flex-direction: column;
+    .acceso__form {
+        flex-direction: column;
     }
 }
-
-
