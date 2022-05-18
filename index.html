@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="recursos/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -16,15 +17,25 @@
 
 <body>
     <header>
-        <nav class="header__nav">
-            <img src="recursos/favicon-16x16.png" width="20px" alt="">
-            <ul>
-                <li class="header__links"><a href="index.html">Inicio</a></li>
-                <li class="header__links"><a href="paginas/servicios.html">Servicios</a></li>
-                <li class="header__links"><a href="paginas/nosotros.html">Nosotros</a></li>
-                <li class="header__links"><a href="paginas/acceso-clientes.html">Acceso clientes</a></li>
-                <li class="header__links"><a href="paginas/contacto.html">Contactos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-2 fondo-rosa">
+            <div class="container-fluid">
+                
+            <a class="navbar-brand" href="#"><img src="recursos/favicon-16x16.png" width="25px" alt="logo estudio"></a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link text-light" href="paginas/servicios.html">Servicios</a>
+                    <a class="nav-link text-light" href="paginas/nosotros.html">Nosotros</a>
+                    <a class="nav-link text-light" href="paginas/acceso-clientes.html">Acceso clientes</a>
+                    <a class="nav-link text-light" href="paginas/contacto.html">Contactos</a>
+                </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -33,19 +44,19 @@
                 <h1 class="encabezado__texto">ESTUDIO CONTABLE E IMPOSITIVO RODRIGUEZ SEGUER</h1>
             </div>
         <section class="iconos">
-            <div class="iconos__card">
+            <div class="iconos__card icono-rosa">
                 <i class="fa-solid fa-arrow-rotate-left iconogrande"></i>
                 <h2 class="iconos__texto">20 años de trayectoria</h2>
             </div>
-            <div class="iconos__card">
+            <div class="iconos__card icono-rosa">
                 <i class="fa-solid fa-angles-right iconogrande"></i>
                 <h2 class="iconos__texto">Celeridad y eficiencia</h2>
             </div>
-            <div class="iconos__card">
+            <div class="iconos__card icono-rosa">
                 <i class="fa-solid fa-book-bookmark iconogrande"></i>
                 <h2 class="iconos__texto">Certificaciones contables</h2>
             </div>
-            <div class="iconos__card">
+            <div class="iconos__card icono-rosa">
                 <i class="fa-solid fa-desktop iconogrande"></i>
                 <h2 class="iconos__texto">Servicios online</h2>
             </div>
@@ -66,9 +77,10 @@
             <p>Servicios Online-Sedes en CABA</p>
         </div>
         <div class="footer__redes">
-            <p><a href="*">Facebook</a> - <a href="*">Instagram</a> - <a href="*">Twitter</a></p>
+            <p><a href="https://es-la.facebook.com/" class="linkVisited">Facebook</a> - <a href="https://www.instagram.com/" class="linkVisited">Instagram</a> - <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="linkVisited">Twitter</a></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
