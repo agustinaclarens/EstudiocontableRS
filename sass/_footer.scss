@@ -1,0 +1,24 @@
+.footer {
+  &__infofinal {
+    text-align: center;
+    background-color: $color-secundario;
+  }
+  
+  &__redes {
+    text-align: center;
+    background-color: $color-secundario;
+  }
+}
+
+@media (max-width: $tablet) {
+  body {
+    padding-bottom:  4rem;
+  }
+}
+
+/* MQ tcelular*/
+@media (max-width: $telefono) {
+  body {
+    padding-bottom: 4rem;
+  }
+}

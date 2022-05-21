@@ -1,127 +1,54 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color:white
-}
-
-p, h1 {
-    margin: 0;
-}
-
-.fondo-rosa {
-    background-color: plum !important;
-}
-
-.boton-rosa {
-    background-color: rgb(255, 67, 217) !important;
-    border: none !important;
-}
-
-.boton-rosa:hover {
-    background-color: rgb(207, 51, 175) !important;
-    border: none !important;
-}
-
-
-.titulo {
-    color: black;
-}
-
-.iconogrande {
-    font-size: 3.125rem;
-}
-
-.encabezado__foto {
-    width: 100%;
-}
-
-.header__nav {
-    text-align: center;
-    background-color: pink;
-}
-
-.header__links {
-    margin: 0.625rem;
-    padding: 0.625rem;
-    list-style: none;
-    display: inline;
-}
-
-.header__links a {
-    color: black;
-    text-decoration: none;
-}
-
-
-.titulo__nombrejefa {
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 6.25rem;
-    color: rgb(221, 160, 221);
-}
-
-.video {
-    width: 100%;
-    margin-bottom: 1.625rem;
-}
-
+/* 
+Variables
+*/
 .footer__infofinal {
-    text-align: center;
-    background-color: rgb(255, 67, 217);
-}
+  text-align: center;
+  background-color: #ff43d9 !important; }
 
 .footer__redes {
-    text-align: center;
-    background-color: rgb(255, 67, 217);
-}
+  text-align: center;
+  background-color: #ff43d9 !important; }
 
-.iconogrande {
-    font-size: 12.5rem;
-}
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 4rem; } }
 
-.iconos__card {
-    display: inline;
-    text-align: center;
-    margin-top: 1.25rem;
-}
+/* MQ tcelular*/
+@media (max-width: 667px) {
+  body {
+    padding-bottom: 4rem; } }
 
-.formulario__uno {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
+p, h1 {
+  margin: 0; }
 
-.formulario__dos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.texto-rosa {
+  color: #ff43d9 !important; }
 
-.formulario__form {
-    display: flex;
-    justify-content: space-evenly;
-}
+.fondo-rosa {
+  background-color: plum !important; }
 
-.mensajemotivador {
-    text-align: center;
-    margin-top: 0.625rem;
-    margin-bottom: 1rem;
-    color: rgb(214, 20, 175);
-    text-decoration: underline;
-    font-size: 1.25rem;
-}
+.boton-rosa {
+  background: #ff43d9 !important;
+  border: none !important; }
+  .boton-rosa:hover {
+    background: #d82bb6 !important;
+    border: none !important; }
 
+.boton-gradiente {
+  background: linear-gradient(90deg, white 0%, #ff00d7 1%, #fbd4f8 100%);
+  color: black;
+  border: none !important; }
 
-.acceso__boton {
-    margin-left: 1.625rem;
-}
+.textarea {
+  resize: none; }
 
-.encabezado__titulo {
+.encabezado {
+  background-color: white; }
+  .encabezado__titulo {
     background-image: url(../recursos/fotoindex.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -135,193 +62,99 @@ p, h1 {
     font-weight: bolder;
     margin: 1.25rem;
     padding: 1.25rem;
-    border: 1.25rem solid black;
-}
-
-.encabezado__texto {
-    background-color: plum;
+    border: 1.25rem solid black; }
+  .encabezado__texto {
+    background-color: plum !important;
     width: 50%;
     overflow-wrap: anywhere;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     font-size: 1.875rem;
-    font-family: 'Orelega One';
+    font-family: "Orelega One";
     font-weight: bolder;
     color: black;
-    text-align: center;
-}
-
-.encabezado {
-    background-color:white;
-}
-
-.infoservicios__explicacionuno {
-    background-color: rgb(221, 160, 221);
-
-}
-
-.infoservicios__explicaciondos {
-    background-color: white
-}
-
-.infoservicios__explicaciontres {
-    background-color: rgb(221, 160, 221);
-}
-
-.iconos {
+    text-align: center; }
+  .encabezado .iconos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0.75rem;
-    padding: 0.75rem;
-}
-
-.quienessomos__titulo {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.875rem;
-    color: rgb(214, 20, 175);
+    padding: 0.75rem; }
+    .encabezado .iconos__card {
+      display: inline;
+      text-align: center;
+      margin-top: 1.25rem; }
+      .encabezado .iconos__card .iconogrande {
+        font-size: 8rem; }
+  .encabezado .titulo {
+    color: black; }
+    .encabezado .titulo__nombrejefa {
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 6.25rem;
+      color: plum !important; }
+  .encabezado .video {
     text-align: center;
-    text-decoration: underline;
-
-}
-
-.quienessomos__infogra {
-    text-align: justify;
-    margin: 0.625rem;
-    padding: 0.625rem;
-}
-
-.quienessomos__contenido {
-    margin: 0.625rem;
-    padding: 0.625rem;
-    display: flex;
-}
-
-.quienessomos__foto, .quienessomos__infogra{
-    flex-basis: 50%;
-    
-}
-
-.quienessomos__foto img{
-    max-width: 100%;
-
-}
-
-/*.video{
-    max-width: 100%;
-}*/
-
-.video{
-    text-align: center;
-}
+    width: 100%;
+    margin-bottom: 1.625rem; }
+  .encabezado .body {
+    background-color: white; }
 
 .infoservicios {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  justify-content: center; }
+  .infoservicios__todosdos {
     margin: 0.625rem;
-    padding: 0.625rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 100%;
-    justify-content: center;
-}
+    padding: 0.625rem; }
+  .infoservicios__explicacionuno {
+    background-color: plum !important; }
+  .infoservicios__explicaciontres {
+    background-color: plum !important; }
 
-.infoservicios__todosdos {
-    margin: 0.625rem;
-    padding: 0.625rem;
-}
-
-.acceso__clientes {
-    margin: 1.25rem;
-    padding: 1.25rem;
-}
-
-.acceso__siguiente {
-    border-color: rgb(0, 170, 255);
-    border-width: 0.25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.formulario__boton {
-    margin: 0.25rem;
-    padding: 0.25rem;
-    border-color: rgb(0, 170, 255);
-    border-width: 0.25rem;
-}
+.acceso {
+  margin-top: 10rem; }
 
 .linkVisited {
-    color: white;
-    text-decoration: none;
-
-    transition: all 0.25s;
-}
-
-.linkVisited:hover {
-    color: gray;
-}
-
-.linkVisited:visited {
-    color: gray;
-}
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s; }
+  .linkVisited:hover {
+    color: gray; }
+  .linkVisited:visited {
+    color: gray; }
 
 .img-size {
-    width: 100% !important;
-}
-
-
+  width: 100% !important; }
 
 /* MQ tablet*/
-@media (max-width:991px) {
-    .iconos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .infoservicios {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .titulo-rosa{
-        color: rgb(200,0,200) !important;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .icono-rosa{
-        color: rgb(200,0,200) !important;
-    }
-}
+@media (max-width: 991px) {
+  .encabezado .iconos {
+    grid-template-columns: repeat(2, 1fr); }
+  .encabezado .iconogrande {
+    font-size: 3.125rem; }
+  .infoservicios {
+    grid-template-columns: repeat(2, 1fr); }
+  .titulo-rosa {
+    color: #ff43d9 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .iconos__card {
+    color: #ff43d9 !important; } }
 
 /* MQ tcelular*/
-@media (max-width:667px) {
-    .encabezado__texto {
-        width: 100%;
-    }
-
-    .iconos {
-        grid-template-columns: 1fr;
-    }
-
-    .infoservicios {
-        grid-template-columns: 1fr;
-    }
-
-    .quienessomos__contenido{
-        flex-direction: column;
-    }
-
-    .formulario__form{
-        flex-direction: column;
-    }
-
-    .acceso__form{
-       flex-direction: column;
-    }
-    .titulo-rosa{
-        color: rgb(200,0,200) !important;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .icono-rosa{
-        color: rgb(200,0,200) !important;
-    }
-
-}
-
+@media (max-width: 667px) {
+  .encabezado__texto {
+    width: 100%; }
+  .encabezado .iconos {
+    grid-template-columns: 1fr; }
+    .encabezado .iconos .iconogrande {
+      font-size: 3.125rem; }
+  .infoservicios {
+    grid-template-columns: 1fr; }
+  .titulo-rosa {
+    color: #ff43d9 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .iconos__card {
+    color: #ff43d9 !important; } }

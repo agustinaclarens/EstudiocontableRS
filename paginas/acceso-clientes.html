@@ -38,19 +38,23 @@
     <main>
         <section class="acceso">
             <article class="acceso__clientes">
-                <form class="acceso__form d-flex justify-content-center" action="post">
+                <form class="acceso__form container d-flex justify-content-center" action="post">
                     <div>
                         <label for="cuitInput" class="form-label">Cuit</label>
                         <input type="text" class="form-control" id="cuitInput" placeholder="Cuit">
                         <label for="passwordInput" class="form-label">Contraseña</label>
                         <input type="password" id="passwordInput" class="form-control" placeholder="*******">
-                        <button type="submit" class="btn btn-primary mt-4 w-100 boton-rosa">Siguiente</button>
+
+                        <div class="my-4 w-100">
+                            <button type="submit" class="btn btn-primary boton-rosa">Siguiente</button>
+                            <button type="submit" class="btn btn-primary boton-gradiente">Limpiar</button>
+                        </div>
                     </div>
                 </form>
             </article>
         </section>
     </main>
-    <footer class="fixed-bottom">
+    <footer class="footer fixed-bottom">
         <div class="footer__infofinal">
             <p>Servicios Online-Sedes en CABA</p>
         </div>

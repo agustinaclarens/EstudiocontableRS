@@ -1,0 +1,219 @@
+/* 
+Variables
+*/
+@import '_variables.scss';
+@import '_mediaqueries.scss';
+@import '_footer.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+p, h1 {
+    margin: 0;
+}
+
+.texto-rosa{
+    color:$color-secundario
+}
+
+.fondo-rosa {
+    background-color: $color-principal ;
+}
+
+.boton-rosa {
+    background: $color-secundario;
+    border: none !important;
+
+    &:hover{
+        background: $color-oscuro;
+        border: none !important;  
+    }
+}
+
+.boton-gradiente {
+    background: $gradiente;
+    color: black;
+    border: none !important;
+}
+
+.textarea {
+    resize: none;
+}
+
+.encabezado {
+    background-color:$color-claro;
+
+    &__titulo {
+        background-image: url(../recursos/fotoindex.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 28.125rem;
+        color: black;
+        text-align: center;
+        font-weight: bolder;
+        margin: 1.25rem;
+        padding: 1.25rem;
+        border: 1.25rem solid black;
+    }
+
+    &__texto {
+        background-color:$color-principal;
+        width: 50%;
+        overflow-wrap: anywhere;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.875rem;
+        font-family: $fuente-titulo;
+        font-weight: bolder;
+        color: black;
+        text-align: center;
+    }
+
+    .iconos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0.75rem;
+        padding: 0.75rem;
+
+        &__card {
+            display: inline;
+            text-align: center;
+            margin-top: 1.25rem;
+
+            .iconogrande {
+                font-size: 8rem;
+            }
+        }
+    }
+
+    .titulo {
+        color: black;
+
+        &__nombrejefa {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 6.25rem;
+            color: $color-principal;
+        }
+        
+    }
+
+    .video{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1.625rem;
+    }
+
+    .body {
+        background-color:$color-claro
+    }
+}
+
+.infoservicios {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    justify-content: center;
+
+    &__todosdos {
+        margin: 0.625rem;
+        padding: 0.625rem;
+    }
+
+    &__explicacionuno{
+        background-color: $color-principal;
+    }
+
+    &__explicaciontres{
+        background-color: $color-principal;
+    }
+}
+
+.acceso {
+    margin-top: 10rem;
+}
+
+.linkVisited {
+    color: $color-claro;
+    text-decoration: none;
+
+    transition: all 0.25s;
+
+    &:hover {
+        color:$color-neutral;
+    }
+
+    &:visited{ 
+        color:$color-neutral;
+    }
+}
+
+
+.img-size {
+    width: 100% !important;
+}
+
+/* MQ tablet*/
+@media (max-width: $tablet) {
+    .encabezado {
+        .iconos {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .iconogrande {
+            font-size: 3.125rem;
+        }
+    }
+
+    .infoservicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .titulo-rosa{
+        color: $color-secundario;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .iconos__card{
+        color: $color-secundario;
+    }
+}
+
+/* MQ tcelular*/
+@media (max-width: $telefono) {
+    .encabezado {
+        &__texto {
+            width: 100%;
+        }
+
+        .iconos {
+            grid-template-columns: 1fr;
+
+            .iconogrande {
+                font-size: 3.125rem;
+            }
+        }
+    }
+
+    .infoservicios {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-rosa{
+        color: $color-secundario;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .iconos__card{
+        color: $color-secundario;
+    }
+}    
