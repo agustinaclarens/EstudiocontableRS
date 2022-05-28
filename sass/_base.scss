@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+.texto-rosa{
+  color:$color-secundario
+}
+
+.fondo-rosa {
+  background-color: $color-principal;
+}
+
+.nosotros-header{
+   color:  $color-secundario;
+}
+
+.boton-rosa {
+  @include buttons-colors($color-secundario);
+
+  &:hover{
+      @include buttons-colors($color-oscuro);
+  }
+}
+
+.boton-gradiente {
+  @include buttons-colors($gradiente);
+  color: black;
+}
+
+.textarea {
+  resize: none;
+}
+
+.acceso__header {
+  margin-top: 1.5rem;
+  color: $color-secundario;
+  text-align: center;
+}
+
+.acceso {
+  margin-top: 10rem;
+}
+
+.linkVisited {
+  color: $color-claro;
+  text-decoration: none;
+
+  transition: all 0.25s;
+
+  &:hover {
+      color:$color-neutral;
+  }
+
+  &:visited{ 
+      color:$color-neutral;
+  }
+}
+
+.img-size {
+  width: 100% !important;
+}
+
+/* MQ tablet*/
+@media (max-width: $tablet) {
+  .titulo-rosa{
+      @include mq-titulo;
+  }
+
+  .iconos__card{
+      color: $color-secundario;
+  }
+}
+
+/* MQ tcelular*/
+@media (max-width: $telefono) {
+  .titulo-rosa{
+      @include mq-titulo;
+  }
+
+  .iconos__card{
+      color: $color-secundario;
+  }
+}    

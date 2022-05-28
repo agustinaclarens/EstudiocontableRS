@@ -1,12 +1,10 @@
 .footer {
   &__infofinal {
-    text-align: center;
-    background-color: $color-secundario;
+    @include footer-text
+ 
   }
-  
   &__redes {
-    text-align: center;
-    background-color: $color-secundario;
+    @include footer-text
   }
 }
 

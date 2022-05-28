@@ -1,0 +1,100 @@
+
+.encabezado {
+  background-color:$color-claro;
+
+  &__titulo {
+      background-image: url(../recursos/fotoindex.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 28.125rem;
+      color: black;
+      text-align: center;
+      font-weight: bolder;
+      margin: 1.25rem;
+      padding: 1.25rem;
+      border: 1.25rem solid black;
+  }
+
+  &__texto {
+      background-color:$color-principal;
+      width: 50%;
+      overflow-wrap: anywhere;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      font-size: 1.875rem;
+      font-family: $fuente-titulo;
+      font-weight: bolder;
+      color: black;
+      text-align: center;
+  }
+
+  .iconos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0.75rem;
+      padding: 0.75rem;
+
+      &__card {
+          display: inline;
+          text-align: center;
+          margin-top: 1.25rem;
+
+          .iconogrande {
+              font-size: 8rem;
+          }
+      }
+  }
+
+  .titulo {
+      color: black;
+
+      &__nombrejefa {
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 6.25rem;
+          color: $color-principal;
+      }
+  }
+
+  .video{
+      text-align: center;
+      width: 100%;
+      margin-bottom: 1.625rem;
+  }
+
+  .body {
+      background-color:$color-claro
+  }
+}
+
+@media (max-width: $tablet) {
+  .encabezado {
+      .iconos {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .iconogrande {
+          font-size: 3.125rem;
+      }
+  }
+}
+
+@media (max-width: $telefono) {
+  .encabezado {
+      &__texto {
+          width: 100%;
+      }
+
+      .iconos {
+          grid-template-columns: 1fr;
+
+          .iconogrande {
+              font-size: 3.125rem;
+          }
+      }
+  }
+}

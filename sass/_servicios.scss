@@ -1,0 +1,46 @@
+@import '_mixins.scss';
+
+.servicios__header {
+    text-align: center;
+    color: $color-secundario;
+    @include espaciado-pequeno;
+}
+
+.infoservicios {
+    @include espaciado-pequeno;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    justify-content: center;
+
+    &__todosdos {
+        @include espaciado-pequeno;
+    }
+
+    &__explicacionuno{
+        background-color: $color-principal;
+    }
+
+    &__explicaciontres{
+        background-color: $color-principal;
+    }
+
+    &__img {
+        margin-top: 0.75rem;
+        width: 100%;
+    }
+}
+
+/* MQ tablet*/
+@media (max-width: $tablet) {
+    .infoservicios {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MQ tcelular*/
+@media (max-width: $telefono) {
+    .infoservicios {
+        grid-template-columns: 1fr;
+    }
+}

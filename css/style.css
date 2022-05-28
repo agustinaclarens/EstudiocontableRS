@@ -1,23 +1,3 @@
-/* 
-Variables
-*/
-.footer__infofinal {
-  text-align: center;
-  background-color: #ff43d9 !important; }
-
-.footer__redes {
-  text-align: center;
-  background-color: #ff43d9 !important; }
-
-@media (max-width: 991px) {
-  body {
-    padding-bottom: 4rem; } }
-
-/* MQ tcelular*/
-@media (max-width: 667px) {
-  body {
-    padding-bottom: 4rem; } }
-
 * {
   margin: 0;
   padding: 0; }
@@ -26,13 +6,16 @@ p, h1 {
   margin: 0; }
 
 .texto-rosa {
-  color: #ff43d9 !important; }
+  color: #fa4a9f !important; }
 
 .fondo-rosa {
-  background-color: plum !important; }
+  background-color: #ef92ef !important; }
+
+.nosotros-header {
+  color: #fa4a9f !important; }
 
 .boton-rosa {
-  background: #ff43d9 !important;
+  background: #fa4a9f !important;
   border: none !important; }
   .boton-rosa:hover {
     background: #d82bb6 !important;
@@ -40,11 +23,47 @@ p, h1 {
 
 .boton-gradiente {
   background: linear-gradient(90deg, white 0%, #ff00d7 1%, #fbd4f8 100%);
-  color: black;
-  border: none !important; }
+  border: none !important;
+  color: black; }
 
 .textarea {
   resize: none; }
+
+.acceso__header {
+  margin-top: 1.5rem;
+  color: #fa4a9f !important;
+  text-align: center; }
+
+.acceso {
+  margin-top: 10rem; }
+
+.linkVisited {
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s; }
+  .linkVisited:hover {
+    color: gray; }
+  .linkVisited:visited {
+    color: gray; }
+
+.img-size {
+  width: 100% !important; }
+
+/* MQ tablet*/
+@media (max-width: 991px) {
+  .titulo-rosa {
+    color: #fa4a9f !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .iconos__card {
+    color: #fa4a9f !important; } }
+
+/* MQ tcelular*/
+@media (max-width: 667px) {
+  .titulo-rosa {
+    color: #fa4a9f !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .iconos__card {
+    color: #fa4a9f !important; } }
 
 .encabezado {
   background-color: white; }
@@ -64,7 +83,7 @@ p, h1 {
     padding: 1.25rem;
     border: 1.25rem solid black; }
   .encabezado__texto {
-    background-color: plum !important;
+    background-color: #ef92ef !important;
     width: 50%;
     overflow-wrap: anywhere;
     padding: 1rem 2rem;
@@ -91,13 +110,50 @@ p, h1 {
       text-align: center;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-size: 6.25rem;
-      color: plum !important; }
+      color: #ef92ef !important; }
   .encabezado .video {
     text-align: center;
     width: 100%;
     margin-bottom: 1.625rem; }
   .encabezado .body {
     background-color: white; }
+
+@media (max-width: 991px) {
+  .encabezado .iconos {
+    grid-template-columns: repeat(2, 1fr); }
+  .encabezado .iconogrande {
+    font-size: 3.125rem; } }
+
+@media (max-width: 667px) {
+  .encabezado__texto {
+    width: 100%; }
+  .encabezado .iconos {
+    grid-template-columns: 1fr; }
+    .encabezado .iconos .iconogrande {
+      font-size: 3.125rem; } }
+
+.footer__infofinal {
+  text-align: center;
+  background-color: #ef92ef !important; }
+
+.footer__redes {
+  text-align: center;
+  background-color: #ef92ef !important; }
+
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 4rem; } }
+
+/* MQ tcelular*/
+@media (max-width: 667px) {
+  body {
+    padding-bottom: 4rem; } }
+
+.servicios__header {
+  text-align: center;
+  color: #fa4a9f !important;
+  margin: 0.625rem;
+  padding: 0.625rem; }
 
 .infoservicios {
   margin: 0.625rem;
@@ -110,51 +166,19 @@ p, h1 {
     margin: 0.625rem;
     padding: 0.625rem; }
   .infoservicios__explicacionuno {
-    background-color: plum !important; }
+    background-color: #ef92ef !important; }
   .infoservicios__explicaciontres {
-    background-color: plum !important; }
-
-.acceso {
-  margin-top: 10rem; }
-
-.linkVisited {
-  color: white;
-  text-decoration: none;
-  transition: all 0.25s; }
-  .linkVisited:hover {
-    color: gray; }
-  .linkVisited:visited {
-    color: gray; }
-
-.img-size {
-  width: 100% !important; }
+    background-color: #ef92ef !important; }
+  .infoservicios__img {
+    margin-top: 0.75rem;
+    width: 100%; }
 
 /* MQ tablet*/
 @media (max-width: 991px) {
-  .encabezado .iconos {
-    grid-template-columns: repeat(2, 1fr); }
-  .encabezado .iconogrande {
-    font-size: 3.125rem; }
   .infoservicios {
-    grid-template-columns: repeat(2, 1fr); }
-  .titulo-rosa {
-    color: #ff43d9 !important;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-  .iconos__card {
-    color: #ff43d9 !important; } }
+    grid-template-columns: 1fr; } }
 
 /* MQ tcelular*/
 @media (max-width: 667px) {
-  .encabezado__texto {
-    width: 100%; }
-  .encabezado .iconos {
-    grid-template-columns: 1fr; }
-    .encabezado .iconos .iconogrande {
-      font-size: 3.125rem; }
   .infoservicios {
-    grid-template-columns: 1fr; }
-  .titulo-rosa {
-    color: #ff43d9 !important;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-  .iconos__card {
-    color: #ff43d9 !important; } }
+    grid-template-columns: 1fr; } }
