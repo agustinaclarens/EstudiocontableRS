@@ -37,6 +37,9 @@ p, h1 {
 .acceso {
   margin-top: 10rem; }
 
+.iconos__card:hover {
+  color: #fa4a9f !important; }
+
 .linkVisited {
   color: white;
   text-decoration: none;
@@ -53,9 +56,7 @@ p, h1 {
 @media (max-width: 991px) {
   .titulo-rosa {
     color: #fa4a9f !important;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-  .iconos__card {
-    color: #fa4a9f !important; } }
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; } }
 
 /* MQ tcelular*/
 @media (max-width: 667px) {

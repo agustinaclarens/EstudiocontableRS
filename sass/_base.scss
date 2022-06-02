@@ -46,6 +46,10 @@ p, h1 {
   margin-top: 10rem;
 }
 
+.iconos__card:hover{
+  color: $color-secundario;
+}
+
 .linkVisited {
   color: $color-claro;
   text-decoration: none;
@@ -71,9 +75,7 @@ p, h1 {
       @include mq-titulo;
   }
 
-  .iconos__card{
-      color: $color-secundario;
-  }
+
 }
 
 /* MQ tcelular*/
