@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: $background-color;
+}
+
 p, h1 {
   margin: 0;
 }
@@ -13,6 +17,7 @@ p, h1 {
 
 .fondo-rosa {
   background-color: $color-principal;
+  color: black !important
 }
 
 .nosotros-header{
@@ -88,3 +93,6 @@ p, h1 {
       color: $color-secundario;
   }
 }    
+
+
+

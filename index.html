@@ -5,93 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- METAINFORMACION (SEO) -->
+    <meta name="description"content="Nuestro incio de bienvenida y prsentación,con el nombre del estudio, el nombre de la contadora y jefa del lugar y un breve video explicativo de como gestionar tu propio estudio contable.">
 
-    <meta name="description" content="Nuestro incio de bienvenida y prsentación,con el nombre del estudio, el nombre de la contadora y jefa del lugar y un breve video explicativo de como gestionar tu propio estudio contable.">
-    <meta name="keywords"  content="CONTADORA,UNLAM,ESTUDIO CONTABLE E IMPOSITIVO RODRIGUEZ SEGUER,EFICIENCIA,CELERIDAD,EFICACIA,SERVICIOS ONLINE,TRAYECTORIA,DRA,CERTIFICACIONES"> 
-
+    <meta name="keywords"content="CONTADORA,UNLAM,ESTUDIO CONTABLE E IMPOSITIVO RODRIGUEZ SEGUER,EFICIENCIA,CELERIDAD,EFICACIA,SERVICIOS ONLINE,TRAYECTORIA,DRA,CERTIFICACIONES">
+    <!-- IMPORTAR FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+
+    <!-- IMPORTAR BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- IMPORTAR ANIMACIONES (AOS) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- IMPORTAR FAVICON -->
     <link rel="shortcut icon" href="./recursos/favicon-16x16.png" type="image/x-icon">
+
+    <!-- IMPORTAR CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONOS FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <title>Inicio - Estudio Contable Rodriguez Seguer</title>
 </head>
 
 <body>
+    <!-- HEADER Y NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-2 fondo-rosa">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img src="./recursos/EST.png" width="80px"
-                    alt="logo estudio"></a>
-                
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link text-light" href="paginas/servicios.html">Servicios</a>
-                    <a class="nav-link text-light" href="paginas/nosotros.html">Nosotros</a>
-                    <a class="nav-link text-light" href="paginas/acceso-clientes.html">Acceso clientes</a>
-                    <a class="nav-link text-light" href="paginas/contacto.html">Contactos</a>
-                </div>
+                        alt="logo estudio"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="paginas/servicios.html">Servicios</a>
+                        <a class="nav-link" href="paginas/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="paginas/acceso-clientes.html">Acceso clientes</a>
+                        <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    
+
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
         <section class="encabezado">
             <div class="encabezado__titulo">
                 <h1 class="encabezado__texto">ESTUDIO CONTABLE E IMPOSITIVO RODRIGUEZ SEGUER</h1>
             </div>
+            <div class="encabezado__subtitulo">
+                <h2 class="text-center">
+                    PRESTAMOS NUESTROS SERVICIOS DE MANERA PRESENCIAL Y 100% ONLINE A DISTANCIA
+                </h2>
+            </div>
 
             <section class="iconos">
-                <div data-aos="zoom-in" class="iconos__card">
+                <div class="iconos__card">
                     <i class="fa-solid fa-arrow-rotate-left iconogrande"></i>
                     <h2>20 años de trayectoria</h2>
                 </div>
-                <div data-aos="zoom-in" class="iconos__card">
+                <div class="iconos__card">
                     <i class="fa-solid fa-angles-right iconogrande"></i>
                     <h2>Celeridad y eficiencia</h2>
                 </div>
-                <div data-aos="zoom-in" class="iconos__card">
+                <div class="iconos__card">
                     <i class="fa-solid fa-book-bookmark iconogrande"></i>
                     <h2>Certificaciones contables</h2>
                 </div>
-                <div data-aos="zoom-in" class="iconos__card">
+                <div class="iconos__card">
                     <i class="fa-solid fa-desktop iconogrande"></i>
                     <h2>Servicios online</h2>
                 </div>
             </section>
             <section class="titulo">
-                <div class="titulo__nombrejefa"> Dra Graciela Seguer (UNlaM)</div>
+                <div data-aos="zoom-in" class="titulo__nombrejefa"> Dra Graciela Seguer (UNlaM)</div>
             </section>
             <section class="video">
-                <iframe width="90%" height="400"src="https://www.youtube.com/embed/alb52LGzWtk"
+                <h2 class="video__titulo">
+                    ¿Querés gestionar tu propio estudio contable? pone play al siguiente video!
+                </h2>
+                <iframe width="90%" height="400" src="https://www.youtube.com/embed/alb52LGzWtk"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </section>
+                    allowfullscreen></iframe>
+            </section>
     </main>
-    
+
+    <!-- FOOTER -->
     <footer>
-        <div class="footer__infofinal">
-            <p>Servicios Online-Sedes en CABA</p>
-        </div>
         <div class="footer__redes">
-            <p><a href="https://es-la.facebook.com/" class="linkVisited">Facebook</a> - <a href="https://www.instagram.com/" class="linkVisited">Instagram</a> - <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="linkVisited">Twitter</a></p>
+            <p>
+                <a href="https://es-la.facebook.com/" class="linkVisited"><i class="fa-brands fa-facebook social-media-icon"></i></a>
+                <a href="https://www.instagram.com/" class="linkVisited"><i class="fa-brands fa-instagram social-media-icon"></i></a>
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="linkVisited"><i class="fa-brands fa-twitter social-media-icon"></i></a>
+            </p>
         </div>
     </footer>
 
+    <!-- IMPORTAR ANIMACIONES (AOS -- JAVASCRIPT) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- INICIALIZAR ANIMACIONES -->
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

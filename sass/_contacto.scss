@@ -1,0 +1,54 @@
+body {
+  min-height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+
+.content {
+  height: 100%
+}
+
+.contacto-container {
+  display: flex;
+  align-items: center;
+  background-color: $background-color;
+  justify-content: center;
+  height: 100%;
+
+  &__description {
+    width: 30%;
+    margin-bottom: 6rem;
+  }
+
+  &__form {
+    padding: 2rem 3rem;
+    width: 50%
+  }
+}
+
+@media (max-width: $tablet) {
+  .contacto-container {
+    flex-direction:column;
+
+    &__description {
+      width: 90%;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    &__form {
+      padding: 2rem 3rem;
+      width: 90%
+    }
+  }
+}
+
+/* MQ tcelular*/
+@media (max-width: $telefono) {
+  .contacto-container {
+    flex-direction:column;
+  }
+}

@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: #f4d7dc; }
+
 p, h1 {
   margin: 0; }
 
@@ -9,7 +12,8 @@ p, h1 {
   color: #fa4a9f !important; }
 
 .fondo-rosa {
-  background-color: #ef92ef !important; }
+  background-color: pink !important;
+  color: black !important; }
 
 .nosotros-header {
   color: #fa4a9f !important; }
@@ -68,6 +72,8 @@ p, h1 {
 
 .encabezado {
   background-color: white; }
+  .encabezado .titulo__nombrejefa {
+    color: black !important; }
   .encabezado__titulo {
     background-image: url(../recursos/fotoindex.jpeg);
     background-position: center;
@@ -84,7 +90,7 @@ p, h1 {
     padding: 1.25rem;
     border: 1.25rem solid black; }
   .encabezado__texto {
-    background-color: #ef92ef !important;
+    background-color: pink !important;
     width: 50%;
     overflow-wrap: anywhere;
     padding: 1rem 2rem;
@@ -111,7 +117,7 @@ p, h1 {
       text-align: center;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-size: 6.25rem;
-      color: #ef92ef !important; }
+      color: pink !important; }
   .encabezado .video {
     text-align: center;
     width: 100%;
@@ -128,27 +134,62 @@ p, h1 {
 @media (max-width: 667px) {
   .encabezado__texto {
     width: 100%; }
+  .encabezado .titulo__nombrejefa {
+    font-size: 3.5rem; }
   .encabezado .iconos {
     grid-template-columns: 1fr; }
     .encabezado .iconos .iconogrande {
       font-size: 3.125rem; } }
 
-.footer__infofinal {
-  text-align: center;
-  background-color: #ef92ef !important; }
+body {
+  min-height: 100vh; }
 
-.footer__redes {
-  text-align: center;
-  background-color: #ef92ef !important; }
+main {
+  height: 100%; }
+
+.content {
+  height: 100%; }
+
+.contacto-container {
+  display: flex;
+  align-items: center;
+  background-color: #f4d7dc;
+  justify-content: center;
+  height: 100%; }
+  .contacto-container__description {
+    width: 30%;
+    margin-bottom: 6rem; }
+  .contacto-container__form {
+    padding: 2rem 3rem;
+    width: 50%; }
 
 @media (max-width: 991px) {
-  body {
-    padding-bottom: 4rem; } }
+  .contacto-container {
+    flex-direction: column; }
+    .contacto-container__description {
+      width: 90%;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .contacto-container__form {
+      padding: 2rem 3rem;
+      width: 90%; } }
 
 /* MQ tcelular*/
 @media (max-width: 667px) {
-  body {
-    padding-bottom: 4rem; } }
+  .contacto-container {
+    flex-direction: column; } }
+
+.footer__infofinal {
+  text-align: center;
+  background-color: pink !important; }
+
+.footer__redes {
+  text-align: center;
+  background-color: pink !important; }
+
+.social-media-icon {
+  font-size: 3rem; }
 
 .servicios__header {
   text-align: center;
@@ -167,9 +208,9 @@ p, h1 {
     margin: 0.625rem;
     padding: 0.625rem; }
   .infoservicios__explicacionuno {
-    background-color: #ef92ef !important; }
+    background-color: pink !important; }
   .infoservicios__explicaciontres {
-    background-color: #ef92ef !important; }
+    background-color: pink !important; }
   .infoservicios__img {
     margin-top: 0.75rem;
     width: 100%; }

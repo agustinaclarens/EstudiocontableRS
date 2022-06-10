@@ -1,6 +1,10 @@
 
 .encabezado {
   background-color:$color-claro;
+  
+  .titulo__nombrejefa {
+        color: black !important;
+  }
 
   &__titulo {
       background-image: url(../recursos/fotoindex.jpeg);
@@ -88,6 +92,12 @@
       &__texto {
           width: 100%;
       }
+
+      .titulo {
+        &__nombrejefa {
+            font-size: 3.5rem;
+        }
+    }
 
       .iconos {
           grid-template-columns: 1fr;

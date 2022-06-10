@@ -8,15 +8,19 @@
   }
 }
 
-@media (max-width: $tablet) {
-  body {
-    padding-bottom:  4rem;
-  }
+.social-media-icon {
+  font-size: 3rem;
 }
 
-/* MQ tcelular*/
-@media (max-width: $telefono) {
-  body {
-    padding-bottom: 4rem;
-  }
-}
+// @media (max-width: $tablet) {
+//   body {
+//     padding-bottom:  4rem;
+//   }
+// }
+
+// /* MQ tcelular*/
+// @media (max-width: $telefono) {
+//   body {
+//     padding-bottom: 4rem;
+//   }
+// }
