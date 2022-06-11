@@ -73,7 +73,14 @@ p, h1 {
 .img-size {
   width: 100% !important;
 }
+.video__titulo{
+  padding: 1rem;
+  margin: 1rem;
+}
 
+.text-center{
+  padding: 1rem;
+}
 /* MQ tablet*/
 @media (max-width: $tablet) {
   .titulo-rosa{
@@ -91,6 +98,9 @@ p, h1 {
 
   .iconos__card{
       color: $color-secundario;
+  }
+  .text-center{
+    font-size: 1rem;
   }
 }    
 

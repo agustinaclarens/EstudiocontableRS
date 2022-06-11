@@ -56,6 +56,13 @@ p, h1 {
 .img-size {
   width: 100% !important; }
 
+.video__titulo {
+  padding: 1rem;
+  margin: 1rem; }
+
+.text-center {
+  padding: 1rem; }
+
 /* MQ tablet*/
 @media (max-width: 991px) {
   .titulo-rosa {
@@ -68,7 +75,9 @@ p, h1 {
     color: #fa4a9f !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
   .iconos__card {
-    color: #fa4a9f !important; } }
+    color: #fa4a9f !important; }
+  .text-center {
+    font-size: 1rem; } }
 
 .encabezado {
   background-color: white; }
